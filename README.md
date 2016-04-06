@@ -14,5 +14,5 @@ Effective permissions are the combination of the three above, that is
 Unfortunately C# does not provide a method to compute effective permissions and the Stackoverflow examples are either incomplete, not correct, or explicitely test for a specific permission. This repo has a single class ([AccessRights.cs](EffectivePermissions/EffectivePermissions/AccessRights.cs)) that handles the effective permissions on a certain path.
 
 # Console Application
-Furthermore, a small console applications checks the permission on the current folder, all contained files, and recurses down. Human readable output is written on a log file on the desktop. This is meant for your customers like "copy this exe to xy, run, and send me the log file from your desktop". This helped me to diagnose strange access problems on a customers network share.
+Furthermore, a small console applications checks the permission on the current folder, all contained files, and recurses down. Human readable output is written to a log file on the desktop. This is meant for your customers like "copy this exe to directory xy, run, and send me the log file from your desktop". This helped me to diagnose strange access problems on a customers network share.
 
